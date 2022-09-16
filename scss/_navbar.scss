@@ -1,0 +1,43 @@
+nav{
+    background-color: $colorNav;
+    width: $w-100;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a img{
+        width: 9rem;
+        margin: 0 20px;
+        padding-top: 3px;
+        cursor: pointer;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding-right: 10px;
+        justify-content: space-evenly;
+        li a{
+            color: $thirdColor;
+            text-decoration: none;
+            font-family: $secondaryFont;
+            font-size: $fontTxt;
+            padding: 0 5px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover{
+                color: $thirdColor;
+                background-size: 100% 2px;
+                list-style: none;
+                font-weight: $textBold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
