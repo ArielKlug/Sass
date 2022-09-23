@@ -39,19 +39,20 @@ h2,h3{
     font-size: $fontMd;
 }
 
+.textWhite{
+    @include textos($fontHeight, $fontTxt,  rgba(233, 226, 221, 0.8));
+    height: $w-90;
+}
+
 main {
     background-color: $secondaryColor;
     article section p{
+    @extend .textWhite;
     text-align: center;
-    font-size: $fontTxt;
-    color: $mainColor;
-    line-height: 2.2rem;
-    font-weight: $textRegular;
     padding: 5px 0;
     margin: 0px;
     width: $w-100;
     overflow-x: none;
-    height: $w-90;
     }
 }
 
@@ -86,6 +87,8 @@ div .flexContainer{
     align-items: center;
 }
 
+
+
 .rowReverse{
     flex-direction: row-reverse;
 }
@@ -99,10 +102,80 @@ div .flexContainer{
     }
 }
 
-.textWhite{
-    color: $mainColor;
-    font-size: $fontTxt;
-    line-height: 2.2rem;
-    font-weight: $textRegular;
-    height: $w-90;
+
+//contacto
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    color: rgba(233, 226, 221, 0.8);
 }
+
+.contact-wrapper > *{
+    box-shadow: 0 0 20px 0 map-get($map: $contactColor, $key: 'uno' );
+    padding: 1em;
+}
+
+.contact-form{
+    background: map-get($map: $contactColor, $key: 'dos');
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        label{
+            display: block;
+            color: map-get($map: $contactColor, $key: 'tres' );
+            font-size: $fontTxt;
+            line-height: $fontHeight;
+            font-weight: $textRegular;
+            height: 90%;
+        }
+        p{
+            margin: 0;
+            padding: 1em;
+        }
+        .block{
+            grid-column: 1 / 3;
+        }
+        input, textarea{
+            @include dataEntrance(100%, none)
+        }
+        button{
+            @include dataEntrance(100%, none);
+            border: 0;
+            text-transform: uppercase;
+            padding: 1em;
+            background: map-get($map: $contactColor, $key:'seis' );
+                &:hover, &:focus{
+                    background: map-get($map: $contactColor, $key: 'cinco');
+                    color: map-get($map: $contactColor, $key: 'cuatro');
+                    transition: backgraund-color 1s ease-out;
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+.contact-info {
+    background: map-get($map: $contactColor, $key: 'siete');
+    h4,ul,p{
+    list-style: none;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    }
+}
+
+//termina contacto
+
+
+
+
+
+//empieza footer
+.pie{
+    text-align: center;
+    background-color: $bgColorPie;
+    img{
+        width: 30px;
+    }
+}
+//termina footer

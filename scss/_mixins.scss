@@ -1,0 +1,30 @@
+//mixins
+@mixin textos ($interlineado, $size, $color ) {
+    font-family: $secondaryFont;
+    font-weight: $textRegular;
+    line-height: $interlineado;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin dataEntrance($width, $border){
+    width: $width;
+    border: $border;
+    background: none;
+    outline: 0;
+    color: map-get($map: $contactColor, $key: 'cuatro');
+    border-bottom: 1px solid map-get($map: $contactColor, $key: 'cinco' );
+}
+//termina mixins
+
+//mapas de colores
+$contactColor:(
+    'uno': rgba(255, 255, 255, .3) ,
+    'dos': #222222, 
+    'tres': rgba(233, 226, 221, 0.8),
+    'cuatro':  #fff,
+    'cinco':  #d63031,
+    'seis': #B70E21,
+    'siete': #000,
+);
+//termina mapas de colores

@@ -1,3 +1,15 @@
+$mainColor: rgba(233, 226, 221, 0.8);
+$colorBorder: 1px solid #d63031;
+$colorNav: rgba(233, 86, 86, 0.8);
+$secondaryColor: rgb(0, 0, 0);
+$thirdColor: #1c0abb;
+$bgColorPie: rgb(34,34,34);
+
+$w-100: 100%;
+$w-90: 90%;
+$w-40: 40%;
+$w-30: 30%;
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:wght@300&display=swap');
 
 $mainFont: 'Roboto', sans-serif;
@@ -7,6 +19,8 @@ $fontLg: 3.6rem;
 $fontMd: 3rem;
 $fontsm: 2.6rem;
 $fontTxt: 2rem;
+
+$fontHeight: 2.2rem;
 
 $textBold:600;
 $textRegular:400;

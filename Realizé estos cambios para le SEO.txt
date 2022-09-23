@@ -1,0 +1,53 @@
+Todos los textos alternativos de las Img's fue colocado en cada html.
+
+
+En el index fué agregada la descripción:
+"Entrenamiento personalizado en gimnasio en interiores, la mejor relación calidad-precio de la zona".
+Keywords:
+"Gimnasio, Fitness, Salud, Hipertrofia, Bajar de peso, Ejercicio, Quemar grasa, Masa muscular, entrenamiento".
+Encabezado: "Rast, entrená en serio".
+
+
+Descripción de Ejercicios:
+ "Los principales tipos de ejercicios más populares de los últimos tiempos.".
+Keywords:
+ "Gimnasio, Fitness, Salud, Hipertrofia, Modo bestia, Espartano, Bajar de peso, Ejercicio, Quemar grasa, Masa muscular, entrenamiento".
+Encabezado:
+¿Qué tipo de ejercicios existen? .
+
+
+
+Descripción de Rutinas :
+ "Con nuestras rutinas personalizadas y adaptables a tus objetivos, lograrás tus mejores resultados.".
+Keywords:
+ "Gimnasio, Fitness, Salud, Rutinas, Calistenia, Bajar de peso, Ejercicio, Quemar grasa, Masa muscular, entrenamiento.
+Encabezado:
+ Rutinas 100% personalizadas.
+
+
+
+Descripción de Nutrición :
+ "Planificación y orientación nutricional para que desarrolles tu mejor estado físico".
+Keywords:
+ "Gimnasio, Fitness, Salud, Nutrición, Bajar de peso, Ejercicio, Quemar grasa, Masa muscular, entrenamiento, Comida saludable".
+Encabezado:
+ Planificación nutricional personalizada.
+
+
+
+Descripción de Nosotros :
+ "Instructores atentos y formados son los que te guiarán a tu mejor versión física en nuestro gimnasio.".
+Keywords:
+ "Gimnasio, Fitness, Salud, Nosotros, Bajar de peso, Nuestra historia, Ejercicio, Quemar grasa, Masa muscular, Entrenamiento, Hipertrofia".
+Encabezado:
+¿Quiénes somos? .
+
+
+
+Descripción de Contacto :
+ "Para consultas particulares o más información acerca sobre gimnacio, dejanos un mensaje.".
+Keywords:
+ "Gimnasio, Fitness, Salud, Contacto, Bajar de peso, Ejercicio, Quemar grasa, entrenamiento".
+Encabezado:
+ Contactano.
+

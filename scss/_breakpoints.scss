@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .flexContainer{
+        flex-direction: column;
+    }
+    .figureImg{
+        max-width: 100%;
+        width: auto;
+    }
+    .contenedorGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info ul, p {
+        text-align: left;
+    }
+}

@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:wght@300&display=swap");
+nav {
+  background-color: rgba(233, 86, 86, 0.8);
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a img {
+  width: 9rem;
+  margin: 0 20px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-right: 10px;
+  justify-content: space-evenly;
+}
+nav ul li a {
+  color: #1c0abb;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  padding: 0 5px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+nav ul li a:hover {
+  color: #1c0abb;
+  background-size: 100% 2px;
+  list-style: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -39,20 +80,24 @@ h2, h3 {
   font-size: 3rem;
 }
 
+.textWhite, main article section p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: 2rem;
+  color: rgba(233, 226, 221, 0.8);
+  height: 90%;
+}
+
 main {
   background-color: rgb(0, 0, 0);
 }
 main article section p {
   text-align: center;
-  font-size: 2rem;
-  color: rgba(233, 226, 221, 0.8);
-  line-height: 2.2rem;
-  font-weight: 400;
   padding: 5px 0;
   margin: 0px;
   width: 100%;
   overflow-x: none;
-  height: 90%;
 }
 
 .flexContainer {
@@ -99,53 +144,73 @@ div .flexContainer {
   width: 100%;
 }
 
-.textWhite {
+.logo {
+  text-align: center;
+  font-size: 3em;
+  color: rgba(233, 226, 221, 0.8);
+}
+
+.contact-wrapper > * {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form label {
+  display: block;
   color: rgba(233, 226, 221, 0.8);
   font-size: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
   height: 90%;
 }
-
-nav {
-  background-color: rgba(233, 86, 86, 0.8);
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+.contact-form form input, .contact-form form textarea {
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
 }
-nav a img {
-  width: 9rem;
-  margin: 0 20px;
-  padding-top: 3px;
-  cursor: pointer;
+.contact-form form button {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  background: #B70E21;
 }
-nav ul {
+.contact-form form button:hover, .contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: backgraund-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background: #000;
+}
+.contact-info h4, .contact-info ul, .contact-info p {
   list-style: none;
-  display: flex;
-  padding-right: 10px;
-  justify-content: space-evenly;
-}
-nav ul li a {
-  color: #1c0abb;
-  text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 2rem;
-  padding: 0 5px;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
-}
-nav ul li a:hover {
-  color: #1c0abb;
-  background-size: 100% 2px;
-  list-style: none;
-  font-weight: 600;
-  cursor: pointer;
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 .pie {
@@ -154,4 +219,28 @@ nav ul li a:hover {
 }
 .pie img {
   width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .figureImg {
+    max-width: 100%;
+    width: auto;
+  }
+  .contenedorGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info ul, p {
+    text-align: left;
+  }
 }
