@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+
+    <!--empieza nav-->
+
     <nav class="navbar navbar-expand-lg navbar-light nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -42,55 +45,58 @@
                 </div>
         </div>
         </nav>
-    <header>
-        <img src="./img/Personas-en-Caminadoras.jpg" alt="Personas entrenando en caminadoras">
-    </header>
+
+    <!--cierra nav-->
+
+    <!--empieza main-->
+   
     <main>
+        <header>
+            <img src="./img/Personas-en-Caminadoras.webp" alt="Personas entrenando en caminadoras">
+        </header>
         <article>
-            <section class="bord-red">
+            <section>
                 <h1>Rutinas 100% personalizadas</h1>
-                <p>Desde bajar de peso hasta mejorar tu rendimiento en carreras de 100 metros, creamos rutinas especiales para mejorar en los objetivos que tengas en mente.</p>
+                <p class="bord-red">Desde bajar de peso hasta mejorar tu rendimiento en carreras de 100 metros, creamos rutinas especiales para mejorar en los objetivos que tengas en mente.</p>
+                <p>Aquí están algunos ejemplos de las rutinas genéricas que utilizamos como complementos:</p>
             </section>
-            <div id="carouselExampleInterval" class="carousel slide row" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active " data-bs-interval="10000">
-                    <img src="./img/rutina1.webp" class="d-block w-100" alt="Imágen de una rutina abdominal">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./img/rutina2.jpg" class="d-block w-100" alt="Imágen de uyna rutina del tren superior">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/rutina3.jpg" class="d-block w-100" alt="Imágen de una rutina del tren inferior">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
+            <section class="row bord-red">
+                <img src="./img/rutinas1.webp" alt="" class="col-lg-3 col-md-6 col-sm-12 p-2">
+                <img src="./img/rutinas2.webp" alt="" class="col-lg-3 col-md-6 col-sm-12 p-2">
+                <img src="./img/rutinas3.webp" alt="" class="col-lg-3 col-md-6 col-sm-12 p-2">
+                <img src="./img/rutinas4.webp" alt="" class="col-lg-3 col-md-6 col-sm-12 p-2">
+            </section>
             <section class="bord-red">
                 <h2>Rehabilitación</h2>
                 <p>También contamos con el desarrollo de rutinas y ejercicios específicos para poder rehabilitarte de manera óptima para una recuperación más rápida.</p>
             </section>
         </article>
     </main>
+
+    <!--cierra main-->
+
+    <!--empieza footer-->
+
     <footer class="pie">
         <h3>Seguinos en nuestras redes sociales</h3>
         <a href="https://www.coderhouse.com/" target="_blank">
-            <img src="./img/Facebook img.png" alt="Seguinos en Facebook" class="pieIcon">
+            <img src="./img/Facebook-img.webp" alt="Seguinos en Facebook" class="pieIcon">
         </a>
         <a href="https://www.coderhouse.com/" target="_blank">
-            <img src="./img/Instagram img.png" alt="Seguinos en Instagram" class="pieIcon">
+            <img src="./img/Instagram-img.webp" alt="Seguinos en Instagram" class="pieIcon">
         </a>
     </footer>
+
+    <!--cierra footer-->
+
+    <!--empiezan scripts-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>
+
+    <!--cierran scripts-->
 </body>
 </html>
